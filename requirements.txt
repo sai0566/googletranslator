@@ -1,3 +1,4 @@
 Django==5.2.11
 googletrans==4.0.0-rc1
 gunicorn
+whitenoise
