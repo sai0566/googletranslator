@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Django Translator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Product+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class='container'>
+    <h1 class="google-text">
+    <span class="blue">G</span>
+    <span class="red">o</span>
+    <span class="yellow">o</span>
+    <span class="blue">g</span>
+    <span class="green">l</span>
+    <span class="red">e</span>
+    Translator
+</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+        
+        <input name="text" type='text' placeholder="Enter the text" auto-complete='off'></input>
+        <br><br>
+
+        <select name="language">
+            <option value="te">Telugu</option>
+            <option value='en'>english</option>
+            <option value="hi">Hindi</option>
+            <option value="ta">Tamil</option>
+            <option value="fr">French</option>
+            <option value="es">Spanish</option>
+            
+        </select>
+
+        <br><br>
+        <button type="submit">Translate</button>
+    </form>
+
+    <h2>Translated Text:</h2>
+    <p>{{ translated_text }}</p>
+</div>
+</body>
+</html>

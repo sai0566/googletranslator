@@ -1,0 +1,67 @@
+body {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Product Sans', Arial, sans-serif;
+}
+
+/* Container to center everything */
+.container {
+    max-width: 500px;
+    margin: auto;
+}
+
+/* Google Heading */
+.google-text {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Input & Textarea */
+input, textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 12px;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+/* Dropdown & Button */
+select, button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+/* Button styling */
+button {
+    background-color: #4285F4;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #357ae8;
+}
+
+/* Google colors */
+.blue { color: #4285F4; }
+.red { color: #EA4335; }
+.yellow { color: #FBBC05; }
+.green { color: #34A853; }
+
+/* 🔥 Mobile Optimization */
+@media (max-width: 480px) {
+    .google-text {
+        font-size: 32px;
+    }
+
+    body {
+        padding: 10px;
+    }
+}
